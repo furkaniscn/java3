@@ -1,11 +1,14 @@
 package oopTest;
 
-public class HomeworkManager {
+public class HomeworkManager(Homework homework) {
+	public void completedLessons{
+		System.out.println("\nTamamlanan dersler: " + homework.detail);
+	}
 	public void homeworkCompleted(Homework homework) {
-		System.out.println("Ödev bitti: " + homework.homeworkName);
+		System.out.println("\nÃ–dev bitti: " + homework.homeworkName);
 	}
 	public void anotherHomework(Homework homework) {
-		System.out.println("Diðer ödevlere geçiniz..." + homework.anotherHomework);
+		System.out.println("\nDiÃ°er Ã¶devlere geÃ§iniz..." + homework.anotherHomework);
 	}
 
 
