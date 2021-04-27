@@ -4,11 +4,23 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Homework homework1 = new Homework(1,"1.Gün","Ödev1","Java veri tipleri","Bitir ve Devam et" );
+		Homework homework1 = new Homework();
+		homework1.homeworkName = "Ã–dev1";
+		homework1.day = "1.GÃ¼n";
+		homework1.detail = "Java baÅŸlangÄ±Ã§ terimleri ve giriÅŸ";
+		homework1.anotherHomework = "Bitir ve devam et";
 		
-		Homework homework2 = new Homework(2,"1.Gün","Ödev2","Altýn.in sitesine gidiniz ve þart bloklarýný bulunuz","Bitir ve Devam et");
+		Homework homework2 = new Homework();
+		homework2.homeworkName = "Ã–dev2";
+		homework2.day = "1.GÃ¼n";
+		homework2.detail = "Java classlar ";
+		homework2.anotherHomework = "Bitir ve devam et";
 		
-		Homework homework3 = new Homework(3,"1.Gün","Ödev3","5-23 arasý videolarý izleyiniz","Bitir ve Devam et");
+		Homework homework3 = new Homework();
+		homework3.homeworkName = "Ã–dev3";
+		homework3.day = "1.GÃ¼n";
+		homework3.detail = "Java metotlar ";
+		homework3.anotherHomework = "Bitir ve devam et";
 		
 		Homework[] homeworks = {homework1,homework2,homework3};
 		
@@ -25,11 +37,19 @@ public class Main {
 		homeworkManager.homeworkCompleted(homework2);
 		homeworkManager.homeworkCompleted(homework3);
 		
+		
 		HomeworkManager homeworkManager2 = new HomeworkManager();
 		
-		homeworkManager2.anotherHomework(homework1);
-		homeworkManager2.anotherHomework(homework2);
-		homeworkManager2.anotherHomework(homework3);
+		homeworkManager2.completedLessons(homework1);
+		homeworkManager2.completedLessons(homework2);
+		homeworkManager2.completedLessons(homework3);
+
+		
+		HomeworkManager homeworkManager3 = new HomeworkManager();
+		
+		homeworkManager3.anotherHomework(homework1);
+		homeworkManager3.anotherHomework(homework2);
+		homeworkManager3.anotherHomework(homework3);
 
 		
 
